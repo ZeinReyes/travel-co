@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Co.</title>
+    <link rel="stylesheet" href="plan.css">
+    <link rel="icon" type="image/ico" href="images/logo_transparent.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <a href="index.html"><img src="images/logo_transparent.png" alt="logo"></a>
+                <li><a href="go_to.html">go to</a></li>
+                <li><a href="plan.html">plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="travel-container">
+                <h1 class="travel-guide">travel guide</h1>
+            </div>
+            <img src="https://e0.pxfuel.com/wallpapers/898/938/desktop-wallpaper-travel-tours-and-travels-background-travel-and-tourism.jpg" alt="">
+            <div class="travel-description">
+                <h1>Discover the World: Your Ultimate Travel Guide Plan</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aliquid ex alias debitis neque deleniti vero modi deserunt quibusdam sed nemo, velit libero perferendis officia laborum! Ab nisi ipsum rem.</p>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="current-location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                <h1 id="location">your location:</h1>
+            </div>
+            <div class="location-input">
+                <div class="location">
+                    <label for="location">location</label><br>
+                    <input type="text" id="location-input">
+                </div>
+                <div class="check-in">
+                    <label for="check-in">check-in</label><br>
+                    <input type="text">
+                </div>
+                <div class="check-out">
+                    <label for="check-out">check-out</label><br>
+                    <input type="text">
+                </div>
+                <div class="guest">
+                    <label for="guest">guest</label><br>
+                    <input type="text">
+                </div>
+                <button id="btn">search</button>
+            </div>
+        </div>
+
+        <h1 id="package-header">popular packages</h1>
+        <p id="sub-header">presenting our popular packages for you</p>
+       <div class="packages">
+        <div class="card" style="width:18rem; height:30rem;">
+            <img src="data:image/jpeg;base64,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" alt="package image">
+            <div class="card-text">
+                <h1>title</h1>
+                <p>[Enter location]</p>
+                <p>[Enter price]</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem; height:30rem;">
+            <img src="https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?cs=srgb&dl=pexels-pixabay-261169.jpg&fm=jpg" alt="package image">
+            <div class="card-text">
+                <h1>title</h1>
+                <p>[Enter location]</p>
+                <p>[Enter price]</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem; height:30rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Town_and_Country_fh000023.jpg" alt="package image">
+            <div class="card-text">
+                <h1>title</h1>
+                <p>[Enter location]</p>
+                <p>[Enter price]</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem; height:30rem;">
+            <img src="https://www.beaches.com/blog/content/images/2021/03/Beaches-Turks-Caicos-Overview.jpg" alt="package image">
+            <div class="card-text">
+                <h1>title</h1>
+                <p>[Enter location]</p>
+                <p>[Enter price]</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+       </div>
+    </main>
+    <footer>
+      <div class="column1">
+        <h1>travel co.</h1>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 192c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192z"/></svg>[Enter location here]</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>[Enter number here]</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>[Enter email here]</p>
+      </div>
+      <div class="column2">
+        <h1>follow us</h1>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>travel_co</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>travelCo</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>travel_co</p>
+      </div>
+      <div class="column3">
+        <img src="images/logo_transparent.png" alt="">
+        <button><a href="#about">contact us</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/></svg></button>
+      </div>
+    </footer>
+    <script src="plan.js"></script>
+</body>
+</html>

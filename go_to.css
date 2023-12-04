@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fbfcfa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 150px;
+    height: 120px;
+    background-color: #fbfcfa;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 0 50px 0 50px;
+    color: #32064a;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 0 80px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title {
+    margin-top: 50px;
+}
+
+.card-text {
+    position: relative;
+    top: -40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #32064a;
+    color: #fbfcfa;
+}
+
+.column1 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column1 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column2 p {
+    margin: 20px 0;
+    display: flex;
+}
+
+.column2 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column2 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column3 button {
+    margin: 3px 0;
+    background-color: #5dc245;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    text-align: center;
+}
+
+.column3 img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 35px;
+}
+
+.column3 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fbfcfa;
+}
+
+.column3 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 5px 0 0 10px;
+}
+
+.container-go_to {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-intro {
+    background-image: url(https://i.pinimg.com/originals/6f/2f/fc/6f2ffc2c5a47b949b114577380c5bd4a.jpg);
+    width: 100%;
+    height: 667px;
+}
+
+.text-travel {
+    width: 800px;
+    height: 300px;
+    color: #fbfcfa;
+    position: relative;
+    top: 110px;
+    left: 30%;
+}
+
+.text-travel h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.text-travel p {
+    font-size: 18px;
+    font-family: 600;
+}
+
+#summer {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        yellow, orange, red
+    );
+}
+
+#winter {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        #87CEEB, #98FB98, #A9A9A9
+    );
+}
+
+#fall {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        #FFDB58, #D2691E, #8B0000, #8B4513
+    );
+}
+
+#spring {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        #FFB6C1, #D8BFD8, #ADD8E6, #C1FFC1
+    );
+}
+
+.season-header {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-style: italic;
+    text-align: center;
+    padding: 50px 0 10px 0;
+    color: #32064a;
+}
+
+.season {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 35px 0;
+}
+
+.season img {
+    height: 220px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.card-body h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-body p {
+    text-align: center;
+    font-style: italic;
+}
+
+.card-body a {
+    background-color: #32064a;
+    border: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.15);
+}

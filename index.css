@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fbfcfa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 150px;
+    height: 120px;
+    background-color: #fbfcfa;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 0 50px 0 50px;
+    color: #32064a;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 0 80px;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container1 img {
+    margin: 50px auto;
+    width: 100%;
+    z-index: 0;
+}
+
+.text h1{
+    z-index: 1;
+    position: absolute;
+    top: 230px;
+    font-size: 50px;
+    width: 80%;
+    left: 150px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #32064a;
+    color: #fbfcfa;
+}
+
+.column1 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column1 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column2 p {
+    margin: 20px 0;
+    display: flex;
+}
+
+.column2 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column2 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column3 button {
+    margin: 3px 0;
+    background-color: #5dc245;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    text-align: center;
+}
+
+.column3 img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 35px;
+}
+
+.column3 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fbfcfa;
+}
+
+.column3 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 5px 0 0 10px;
+}

@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fbfcfa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 150px;
+    height: 120px;
+    background-color: #fbfcfa;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 0 50px 0 50px;
+    color: #32064a;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 0 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #32064a;
+    color: #fbfcfa;
+}
+
+.column1 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column1 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column2 p {
+    margin: 20px 0;
+    display: flex;
+}
+
+.column2 h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.column2 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 0 10px 0 0;
+}
+
+.column3 button {
+    margin: 3px 0;
+    background-color: #5dc245;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    text-align: center;
+}
+
+.column3 img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 35px;
+}
+
+.column3 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fbfcfa;
+}
+
+.column3 svg {
+    width: 15px;
+    height: 15px;
+    fill: #fbfcfa;
+    margin: 5px 0 0 10px;
+}
+
+.container-contact {
+    width: 100%;
+    height: 400px;
+    background-color: #32064a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color: #fbfcfa;
+}
+
+.text h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: center;
+}
+
+.text p {
+    margin: 20px 100px;
+    text-align: center;
+}
+
+.container-contact img {
+    position: relative;
+    left: -80px;
+    width: 400px;
+    height: 300px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.card-contact {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    top: -90px;
+}
+
+.card1, .card2 {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fbfcfa;
+    height: 350px;
+    width: 550px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card1 h5 , .card2 h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-body svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+}
+
+.card-body {
+    margin: 50px auto;
+}
+
+.card-body h5 {
+    font-size: 40px;
+}
+
+.card-body p{
+    text-transform: capitalize;
+}
+
+.card-body h2 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+.card2 > .card-body > button {
+    margin: 50px auto;
+    background-color: #5dc245;
+    color: #fbfcfa;
+    width: 150px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+}
+
+.card2 > .card-body > h2 {
+    padding: 10px 20px 0;
+}
+
+.card2 > .card-body {
+    align-items: center;
+}
+
+.location {
+    width: 80%;
+    height: 500px;
+    background-color: #32064a;
+    margin: 50px auto 150px;
+    display: flex;
+    color: #fbfcfa;
+}
+
+.location img {
+    width: 50%;
+    height: 500px;
+}
+
+.visit-header {
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.location-info h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    margin: 40px 20px 40px;
+    font-weight: 900;
+}
+
+.location-info h2 {
+    text-transform: uppercase;
+    padding: 5px 20px;
+}
+
+.location-info p {
+    padding: 5px 20px;
+}
+
+.popup {
+    position: absolute;
+    top: -250px;
+    left: 37%;
+    display: none;
+}
+
+.popup form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+  
+.popup label {
+    display: block;
+    font-weight: bold;
+    color: #fbfcfa;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+  
+.popup input[type="text"],
+.popup input[type="email"],
+.popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: #333;
+    border-radius: 5px;
+    background-color: #fbfcfa;
+    color: #333;
+    resize: none;
+}
+  
+.submit {
+    background-color: #5dc245;
+    color: #fbfcfa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    left: 35%;
+}
+
+.close {
+    float: right;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fbfcfa;
+}
+
+form h1 {
+    color: #fbfcfa;
+    text-transform: uppercase;
+}
